@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------------------------
+ @package: http://xplozz.com/ Custom Web Design/Development by Abdullah al Turky
+ @author: Abdullah al Turky
+ @http://xplozz.com/
+ @copyright: Copyright 2023 - Abdullah al Turky
+
+ =============================================================================
+ Filename: _colors.scss
+ =============================================================================
+
+ Styles should be compiled using gulp task management.
+ ----------------------------------------------------------------------------------*/
+
+// *Color Variable
+$primary-color: #510DB0;
+$secondary-color: #050506;
+$olive-color : #626409;
+$text-black: #000;
+$primary-hover: #866b21;
+
+/* Text color */
+$text-white : #fff;
+
+/* Color Secondary */
+.color-primary{
+    color: $primary-color;
+}
+
+.color-primary-bg{
+    background-color: $primary-color;
+}
+.color-black{
+    color: #111;
+}
+

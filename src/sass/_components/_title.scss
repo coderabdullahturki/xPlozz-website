@@ -1,0 +1,83 @@
+/*------------------------------------------------------------------------------------
+ @package: Olive Green Hotel Custom Web Design/Development by WD
+ @author: Zack / Vasilis / Eleni
+ @olivegreenhotel.com
+ @copyright: Copyright 2023 - Web Dynamic Greece / Asia
+
+ =============================================================================
+ Filename: _title.scss
+ =============================================================================
+
+ Styles should be compiled using gulp task management.
+ ----------------------------------------------------------------------------------*/
+
+ @import "../_mixins/responsive-breakpoints";
+
+/* Primary Title
+--------------- */
+@mixin primary-title {
+    font-size: calc(30px + (55 - 30) * ((100vw - 320px) / (1920 - 320)));
+    color: #000000;
+    text-align: center;
+    line-height: 1.1;
+    padding: 0 15px;
+    font-weight: 500;
+
+    span{
+        display: block;
+    }
+}
+
+.primary-title-wrapper{
+  text-align: center;
+}
+
+/* Title Wrapper */
+.title-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Secondary Title
+------------------ */
+@mixin secondary-title {
+    position: relative;
+    line-height: 1.2;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    color: #fff;
+    font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (1920 - 320)));
+}
+
+
+/* Use by class name
+-------------------- */
+.primary-title{
+    @include primary-title;
+}
+
+.secondary-title{
+    @include secondary-title;
+
+    @include min-width-1024 {
+        font-size: 2.6150627615062763vw;
+    }
+
+    span {
+        color: #a349fc;
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+.sub-tag {
+    color: #707071;
+    font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+
+    @include min-width-1024 {
+        font-size:  1.3075313807531381vw;
+    }
+}

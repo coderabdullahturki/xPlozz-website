@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------------------------
+ @package: Olive Green Hotel Custom Web Design/Development by WD
+ @author: Zack / Vasilis / Eleni
+ @olivegreenhotel.com
+ @copyright: Copyright 2023 - Web Dynamic Greece / Asia
+
+ =============================================================================
+ Filename: webdynamic-default.scss
+ =============================================================================
+
+ Styles should be compiled using gulp task management.
+ ----------------------------------------------------------------------------------*/
+
+/* *Default Mixins */
+@import "./_mixins/mixin"; 
+
+/* Color variables */
+@import "./_utilities/colors";
+
+/* *Language Switcher */
+@import "./_utilities/language-switcher/language-switcher";
+
+/* *Preloader style */
+@import "./_utilities/preloader/preloader";
+
+/* *Back to Top style */
+@import "./_utilities/back-to-top/back-to-top";
+
+/* *Project reset style */
+@import "reset";
+
+/* *Common/default styles */
+@import "common";

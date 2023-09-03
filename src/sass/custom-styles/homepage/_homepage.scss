@@ -1,0 +1,246 @@
+/*------------------------------------------------------------------------------------
+ @package: Custom Web Design/Development by Abdullah al Turky
+ @author: Abdullah
+ @http://xplozz.com/
+ @copyright: Copyright 2023 - Abdullah al Turky
+
+ =============================================================================
+ Filename: _homepage.scss
+ =============================================================================
+
+ Styles should be compiled using node task management.
+ ----------------------------------------------------------------------------------*/
+
+
+ /********************** Homepage header style ***********************
+ -------------------------------------------------------------------*/
+
+
+ main {
+    background: $secondary-color;
+    color: #e5e1e1;
+    margin-top: 60px;
+
+    .hero-intro{
+        padding: 40px 0;
+
+        @include min-width-1024 {
+            padding: 8.281573498964804vh 0;
+        }
+
+        @include phone-767 {
+            text-align: center;
+        }
+
+        .intro-title {
+            font-weight: 600;
+            font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1920 - 320)));
+            text-transform: capitalize;
+
+            @include min-width-1024 {
+                font-size: 3.1380753138075312vw;
+            }
+
+            span {
+                color: #a349fc;
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+        .btn-grid {
+            display: flex;
+            gap: 20px;
+
+            @include phone-767 {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            @include phone-480 {
+                
+            }
+        }
+
+        .rocket {
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    /* Explore Block Css */
+    .explore-block {
+        max-width: calc(300px + (600 - 300) * ((100vw - 320px) / (1920 - 320)));
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Features Block */
+    .features-block {
+        .single-feature {
+
+            @include phone-767 {
+                margin-top: 30px;
+                text-align: center;
+            }
+
+            .bi {
+                color: #a349fc;
+                font-size: calc(28px + (35 - 28) * ((100vw - 320px) / (1920 - 320)));
+                border: 3px solid rgba(163,73,252,.2);
+                border-radius: 24px;
+                padding: 16px 18px;
+            }
+
+            .feature-title {
+                font-size: calc(21px + (30 - 21) * ((100vw - 320px) / (1920 - 320)));
+                text-transform: capitalize;
+                font-weight: 600;
+                @include primary-font;
+    
+                @include min-width-1024 {
+                    font-size: 1.5690376569037656vw;
+                }
+            }
+        }
+    }
+
+    /* Engaging Block */
+    .engaging-block {
+        .content-wrap {
+            @include phone-767 {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    /* Monitize block css */
+    .monitize-block {
+        padding: 40px 0;
+
+        @include min-width-1024 {
+            padding: 7.281573498964804vh 0;
+        }
+
+        .secondary-title {
+            display: block;
+            text-align: center;
+            span {
+                display: inline-block;
+            }
+        }
+
+        .secondary-text {
+            text-align: center;
+            margin: auto;
+
+            @include min-width-1024 {
+                max-width: 34.51882845188285vw;
+                width: 100%;
+            }
+
+            span {
+                color: #a349fc;
+            }
+        }
+
+        .counter-slider-wrap {
+
+            .big-text {
+                font-size: calc(35px + (85 - 35) * ((100vw - 320px) / (1920 - 320)));
+                font-weight: 600;
+                color: #a349fc;
+                text-align: center;
+
+                @include min-width-1024 {
+                    font-size: 5vw;
+                }
+            }
+
+            .d-flex {
+                gap: 30px;
+                flex-direction: column;
+
+                @include min-width-1024 {
+                    flex-direction: row;
+                    gap: 2.6150627615062763vw;
+                }
+                .slider-cell {
+                    width: 100%;
+
+                    .range-output {
+                        margin-top: 20px;
+                        text-align: center;
+
+                        p {
+                            font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+                            margin-bottom: 2px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                input {
+                    width: 100%;
+                    -webkit-appearance: none;
+                    background:transparent;
+                    cursor: pointer;
+                    // overflow: hidden;
+                }
+                input::-webkit-slider-runnable-track{
+                    height:5px;
+                    border-radius:20px;
+                    box-shadow:inset 1px 1px 2px #57575780;
+                }
+                input::-moz-range-track{
+                    height:5px;
+                    border-radius:20px;
+                    box-shadow:inset 1px 1px 2px #57575780;
+                }
+                /* red track */
+                input::-webkit-slider-runnable-track {
+                    background:#7517d3;
+                    
+                }
+                input::-moz-range-track  {
+                    // background:#7517d3;
+                    background:#fff;
+                }
+
+                
+                    /* Thumb Styles  */
+                    input::-moz-range-thumb:hover{
+                        cursor:grab;
+                    }
+                    input::-webkit-slider-thumb:hover{
+                        cursor:grab;
+                    }
+                    
+                    input::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        height:16px;
+                        width:16px;
+                        border-radius:50%;
+                        border:none;
+                        background-color:white;
+                        // box-shadow:inset .5px .5px 1px #57575780; 
+                        box-shadow: 1px 0 0 6px #a349fc;
+                        transform:translateY(-5px);
+                    }
+                    
+                    input::-moz-range-thumb {
+                        -webkit-appearance: none;
+                        height:16px;
+                        width:16px;
+                        border-radius:50%;
+                        border:none;
+                        background-color:white;
+                        box-shadow:inset .5px .5px 1px #57575780; 
+                    }
+            }
+        }
+    }
+ }

@@ -1,0 +1,63 @@
+.footer-grid {
+    background:#7517d3;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 400px));
+    justify-content: center;
+    grid-gap: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320))) 2.5vw;
+
+    @include desktop-1230 {
+        padding: 35px 3vw;
+    }
+    @include max-width-1023 {
+        padding: 35px calc(20px + (50 - 20) * ((100vw - 320px) / (1023 - 320)));
+    }
+
+    @include phone-767 {
+        grid-template-columns: auto;
+    }
+
+    .footer-col {
+
+        @include min-width-1024 {
+            margin: 0 auto;
+        }
+
+        .footer-col-title {
+            color: #fff;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
+        }
+        .logo {
+            img {
+                max-width: 150px;
+                width: 100%;
+                filter: sepia(1);
+                transform: scale(1);
+                transition: all 0.5s ease;
+    
+                &:hover {
+                    transform: scale(1.04);
+                }
+            }
+        } 
+
+        .desc {
+            p {
+                padding-right: 10px;
+                text-align: justify;
+                text-align-last: left;
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    text-transform: capitalize;
+                    color: #050506;
+                }
+            }
+        }
+    }
+}
