@@ -22,5 +22,5 @@ The `_colors.scss` file has a Sass map. You can add/remove/modify the colors the
 
 ### Type scale
 
-The `_type.scss` contains a Sass map with type scales for different screen sizes. If you wish to add a new scale, the name of the screen size must match a size found in `_breakpoints.scss`.
+The `_type.scss` contains a Sass map with type scales for different screen sizes. If you wish to add a new scale, the name of the screen size must match a size found in `_responsive-breakpoints.scss`.
 
