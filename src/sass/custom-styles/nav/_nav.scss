@@ -17,7 +17,7 @@
 
 .main-header {
     width: 100%;
-    background: #7517d3;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,7 +134,7 @@
             }
 
             .btn {
-                background: #050506;
+                // background: #050506;
                 display: flex;
                 align-items: center;
                 gap: 5px;
@@ -142,6 +142,8 @@
                 padding: 10px 25px;
                 border-radius: 50px;
                 transition: all 0.5s;
+                border: 1px solid #fff;
+                font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
 
                 &:hover {
                     transform: translateY(-1px);
@@ -183,5 +185,10 @@
 
 
     }
+}
+
+.BgTransparent {
+    transition: all 1s;
+    background-color: #050506;
 }
 
